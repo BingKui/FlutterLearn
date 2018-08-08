@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
-void main() => runApp(new MyApp());
+import './layout.dart';
+
+void main() => runApp(new LayoutAppTwo());
+
+// void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -22,6 +26,7 @@ class MyApp extends StatelessWidget {
     // );
     return new MaterialApp(
       title: 'Startup Name Generator',
+      debugShowCheckedModeBanner: false,
       theme: new ThemeData(
         primaryColor: Colors.white,
       ),
